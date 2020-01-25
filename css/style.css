@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+/*------Header------*/
+
+header {
+    text-align: center;
+    height: 36px;
+    margin-bottom: 15px;
+}
+
+/*------Money transfer form ------*/
+
+form {
+    background: linear-gradient(to bottom, #E2E1E1, #F3F3F3);
+    max-width: 1200px;
+    margin: 0 50px;
+    border-top: 1px solid #605F5F;
+}
+
+/*------Form card------*/
+
+.form-card, .form-money {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 30px;
+}
+
+.sender-card, .recipient-card {
+    background: #FFF;
+    font-size: 10px;
+    height: 210px;
+    width: 360px;
+    position: relative;
+    box-sizing: border-box;
+    padding:30px 5px 5px 5px;
+    margin: 50px 10px 0 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.40);
+}
+
+.form-card-details {
+    position: absolute;
+    bottom: 205px;
+    font-size: 14px;
+}
+
+.form-card input {
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 14px;
+    text-align: center;
+}
+
+.logo-card {
+    position: relative;
+    text-align: right
+}
+
+.card-number {
+    margin-left: 16px;
+}
+
+.number-input-field {
+    width: 90%;
+    margin: 0 0 30px 16px;
+}
+
+.sender-card_validity  {
+    display: flex;
+padding: 0 14px;
+}
+
+.text-card {
+    flex-grow: 1;
+}
+
+.validity-input {
+    width: 50px;
+}
+
+.form-money-button {
+    padding-top: 10px;
+}
+
+.form-money-button_color {
+    background: #49924D;
+    color: #FFFFFF;
+    border-radius: 3px;
+    font-size: 12px;
+    height: 30px;
+
+
+}
+
+/*------Money entry form------*/
+
+.help, .help-textarea {
+    padding: 0 5px;
+    margin: 0 10px;
+
+
+}
+
+.form-money input:not([type="checkbox"]), button{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-money_input {
+    width: 360px;
+}
+
+.help {
+    display: flex;
+}
+
+.help-icon {
+    padding-left: 3px;
+    margin-top: 10px;
+}
+
+/*------Adaptation------*/
+
+@media (min-width : 1200px) {
+    .form-card, .form-money, .help, .help-textarea {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (max-width: 860px) {
+    header {
+        font-size: 60%;
+    }
+
+    .form-card, .form-money, .help, .help-textarea {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .form-money_input {
+        width: 100%;
+    }
+
+    .textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .help {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .help {
+        font-size: 50%;
+    }
+}
