@@ -19,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/bankcardform" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WiMiijujND1wpFoVbTRWjtOnnC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -79,7 +79,7 @@
       <workItem from="1579628092128" duration="1616000" />
       <workItem from="1579629749257" duration="279000" />
       <workItem from="1579631326694" duration="25073000" />
-      <workItem from="1579728163038" duration="55036000" />
+      <workItem from="1579728163038" duration="55621000" />
     </task>
     <servers />
   </component>
