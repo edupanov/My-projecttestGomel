@@ -23,13 +23,13 @@ form {
 
 /*------Form card------*/
 
-.form--card, .form-money {
+.card, .money {
     display: flex;
     justify-content: space-evenly;
     padding: 0 30px;
 }
 
-.form--card_data {
+.card--data {
     background: #FFF;
     font-size: 10px;
     height: 210px;
@@ -42,13 +42,13 @@ form {
     box-shadow: 0 5px 20px rgba(0,0,0,0.40);
 }
 
-.form-card_data--details {
+.card--data_details {
     position: absolute;
     bottom: 205px;
     font-size: 14px;
 }
 
-.form--card input {
+input {
     border: none;
     border-bottom: 1px solid #000;
     font-size: 14px;
@@ -57,7 +57,7 @@ form {
 
 }
 
-.form--card_data--logo {
+.card--data_logo {
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -68,12 +68,12 @@ form {
     margin-left: 16px;
 }
 
-.form--card_data--number {
+.card--data_number {
     width: 90%;
     margin: 0 0 30px 16px;
 }
 
-.form--card_validity  {
+.card--validity  {
     display: flex;
 padding: 0 14px;
 }
@@ -86,11 +86,11 @@ padding: 0 14px;
     width: 50px;
 }
 
-.form-money-button {
+.money--button {
     padding-top: 10px;
 }
 
-.form-money-button_color {
+.money--button_color {
     background: #49924D;
     color: #FFFFFF;
     border-radius: 3px;
@@ -109,12 +109,12 @@ padding: 0 14px;
 
 }
 
-.form-money input:not([type="checkbox"]), button{
+.money input:not([type="checkbox"]), button{
     width: 100%;
     box-sizing: border-box;
 }
 
-.form-money_input {
+.money--input {
     width: 360px;
 }
 
@@ -123,8 +123,7 @@ padding: 0 14px;
 }
 
 .help-icon {
-    padding-left: 3px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 textarea {
@@ -132,6 +131,7 @@ textarea {
 }
 
 /*------Hiden window------*/
+
 
 #help-card, #help-mail {
     display: none;
@@ -169,6 +169,7 @@ textarea {
     background: rgba(0, 0, 0, .7);
     z-index: 100;
 }
+
 .overlay {
     position:absolute;
     width:100%;
@@ -183,7 +184,7 @@ textarea {
 /*------Adaptation------*/
 
 @media (min-width : 1200px) {
-    .form-card, .form-money, .help, .help-textarea {
+    .card, .money, .help, .help-textarea {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -196,23 +197,29 @@ textarea {
         font-size: 60%;
     }
 
-    .form-card, .form-money, .help, .help-textarea {
+    .card, .money, .help, .help-textarea {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
 
-    .form-money_input {
+    .money--input {
         width: 100%;
     }
 
     .textarea {
         width: 100%;
     }
+
+    .help {
+justify-content: center;    }
 }
 
 @media (max-width: 600px) {
     .help {
         font-size: 80%;
+    }
+    .help-window {
+        width: 80%;
     }
 }
 
