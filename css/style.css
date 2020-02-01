@@ -61,8 +61,17 @@ input {
     display: flex;
     justify-content: flex-end;
     position: relative;
-
 }
+
+.maestro, .mastercard, .visa {
+    display: none;
+}
+
+.logo {
+    height: 30px;
+    width: 40px;
+}
+
 
 .card-number {
     margin-left: 16px;
@@ -93,6 +102,7 @@ padding: 0 14px;
 .money--button_color {
     background: #49924D;
     color: #FFFFFF;
+    border: 1px;
     border-radius: 3px;
     font-size: 12px;
     height: 30px;
@@ -130,6 +140,10 @@ textarea {
     resize: none
 }
 
+.help-textarea {
+    display: none;
+}
+
 /*------Hiden window------*/
 
 
@@ -141,6 +155,7 @@ textarea {
     width: 100%;
     height: 100%;
 }
+
 .help-window {
     width: 500px;
     height: 300px;
@@ -177,14 +192,13 @@ textarea {
     z-index: 1;
 }
 
-
 #help-card:target {display: block;}
 #help-mail:target {display: block;}
 
 /*------Adaptation------*/
 
 @media (min-width : 1200px) {
-    .card, .money, .help, .help-textarea {
+    .card, .money, .help {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -211,7 +225,7 @@ textarea {
     }
 
     .help {
-justify-content: center;    }
+        justify-content: center;    }
 }
 
 @media (max-width: 600px) {
@@ -220,6 +234,7 @@ justify-content: center;    }
     }
     .help-window {
         width: 80%;
+        overflow: auto
     }
 }
 

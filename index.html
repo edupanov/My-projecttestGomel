@@ -15,6 +15,7 @@
             <div class="card">
                 <div class="card--data">
                     <div class="card--data_logo">
+                        <div class="logo"></div>
                         <div class="maestro" id="maestro">
                             <svg height="30px" version="1.1" viewBox="0 0 480 308" width="40px"
                                  xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" id="round-rect" stroke="none" stroke-width="1">
@@ -80,19 +81,22 @@
                         <h3>Данные отправителя</h3>
                     </div>
                     <div class="sender">
-                    <label for="sender--card"><p class="card-number">Номер карты</p></label><input type="text" id="sender--card" class="card--data_number">
+                    <label for="sender--card"><p class="card-number">Номер карты</p></label><input type="text"
+                                                                                                   id="sender--card"
+                                                                                                   class="card--data_number" maxlength="16"
+                    >
                     <div class="card--validity">
                         <div class="text-card">
                             <label for="month">
                                 <p>Срок дейсвия</p>
-                                <input type="text" id="month" class="validity" placeholder="ММ">
+                                <input type="text" id="month" class="validity" maxlength="2" placeholder="ММ">
                                 <span>/</span>
-                                <input type="text" class="validity" placeholder="ГГ">
+                                <input type="text" class="validity" placeholder="ГГ" maxlength="2">
                             </label>
                         </div>
                         <span>
                            <label for="CW"><p>CW/CVC</p></label><input class="validity"
-                                                                                                 id="CW">
+                                                                                                 id="CW" maxlength="3">
                         </span>
                         <div class="help-icon">
                                 <a href="#help-card">
@@ -107,7 +111,8 @@
                         <h3>Данные получателя</h3>
                     </div>
                     <div class="card--data_logo">
-                        <div class="logo">
+                        <div class="logo"></div>
+                        <div class="maestro">
                             <svg height="30px" version="1.1" viewBox="0 0 480 308" width="40px"
                                  xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" id="round-rect" stroke="none" stroke-width="1">
                                 <g id="maestro_card_payment">
@@ -126,7 +131,7 @@
                                 </g>
                             </g></svg>
                         </div>
-                        <div class="logo">
+                        <div class="mastercard">
                             <svg enable-background="new 0 0 64 64" height="30px" id="Layer_1" version="1.1"
                                  viewBox="0 0 64 64" width="40px"
                                  xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
@@ -161,7 +166,7 @@
             <g><g><path d="M49.9,36.9H52c0.6-3.3,0.7-6,2.1-5.5c0.2-1.3,0.5-1.8,0.7-2.3c0,0-0.1,0-0.4,0c-0.9,0-1.6,1.2-1.6,1.2      l0.2-1.1" fill="#DCE5E5"/></g></g></g>
         </g></svg>
                         </div>
-                        <div class="logo">
+                        <div class="visa">
                             <svg height="30px" version="1.1" viewBox="0 0 512 512" width="40px"
                                  xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
     <g id="_x33_63-visa_x2C__Credit_card">
@@ -169,7 +174,7 @@
                         </div>
                     </div>
                     <label for="recipient-card"><p class="card-number">Номер карты</p></label><input
-                        type="text" id="recipient-card" class="card--data_number">
+                        type="text" id="recipient-card" class="card--data_number"maxlength="16">
                 </div>
             </div>
             <div class="money">
@@ -187,7 +192,6 @@
                         <input type="text" id="transfer-amount" placeholder="От 500 до 5000000" maxlength="7">
                         <label for="total-amount"><p>Итоговая сумма</p></label>
                         <input type="text" id="total-amount" placeholder="От 680 до 5301500" maxlength="7">
-
                     </div>
                     <div class="money--button">
                         <input type="submit" value="Перевести" class="money--button_color">
