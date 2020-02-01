@@ -15,20 +15,21 @@ header {
 
 form {
     background: linear-gradient(to bottom, #E2E1E1, #F3F3F3);
-    max-width: 1200px;
-    margin: 0 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     border-top: 1px solid #605F5F;
 }
 
 /*------Form card------*/
 
-.form-card, .form-money {
+.form--card, .form-money {
     display: flex;
     justify-content: space-evenly;
     padding: 0 30px;
 }
 
-.sender-card, .recipient-card {
+.form--card_data {
     background: #FFF;
     font-size: 10px;
     height: 210px;
@@ -36,39 +37,43 @@ form {
     position: relative;
     box-sizing: border-box;
     padding:30px 5px 5px 5px;
-    margin: 50px 10px 0 10px;
+    margin: 50px 0 0 0;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.40);
 }
 
-.form-card-details {
+.form-card_data--details {
     position: absolute;
     bottom: 205px;
     font-size: 14px;
 }
 
-.form-card input {
+.form--card input {
     border: none;
     border-bottom: 1px solid #000;
     font-size: 14px;
     text-align: center;
+    outline: 0
+
 }
 
-.logo-card {
+.form--card_data--logo {
+    display: flex;
+    justify-content: flex-end;
     position: relative;
-    text-align: right
+
 }
 
 .card-number {
     margin-left: 16px;
 }
 
-.number-input-field {
+.form--card_data--number {
     width: 90%;
     margin: 0 0 30px 16px;
 }
 
-.sender-card_validity  {
+.form--card_validity  {
     display: flex;
 padding: 0 14px;
 }
@@ -77,7 +82,7 @@ padding: 0 14px;
     flex-grow: 1;
 }
 
-.validity-input {
+.validity {
     width: 50px;
 }
 
@@ -121,6 +126,59 @@ padding: 0 14px;
     padding-left: 3px;
     margin-top: 10px;
 }
+
+textarea {
+    resize: none
+}
+
+/*------Hiden window------*/
+
+#help-card, #help-mail {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.help-window {
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    background-attachment: unset;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #49924D;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 2;
+    }
+
+.modal-wrapper {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .7);
+    z-index: 100;
+}
+.overlay {
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index: 1;
+}
+
+
+#help-card:target {display: block;}
+#help-mail:target {display: block;}
 
 /*------Adaptation------*/
 
